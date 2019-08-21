@@ -28,11 +28,17 @@
             android:layout_height="wrap_content" android:id="@+id/done_button"
             android:layout_gravity="center_horizontal" style="@style/Widget.AppCompat.Button.Colored"
             android:layout_marginTop="@dimen/layout_margin" android:textColorLink="@color/colorAccent"/>
+
     <TextView
-            android:text=""
+            android:id="@+id/nickname_text"
+            style="@style/NameStyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:id="@+id/nickname_text" style="@style/NameStyle"
-            android:textAlignment="center" android:visibility="gone"/>
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:paddingBottom="@dimen/small_padding"
+            android:text=""
+            android:textAlignment="center"
+            android:visibility="gone" />
     <ImageView
             android:id="@+id/star_image"
             android:layout_width="match_parent"
@@ -41,11 +47,14 @@
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:id="@+id/bio_scroll">
+
         <TextView
-                android:text="@string/bio"
+                android:id="@+id/bio_text"
+                style="@style/NameStyle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/bio_text" style="@style/NameStyle"
-                android:lineSpacingMultiplier="12"/>
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="2"
+                android:text="@string/bio" />
     </ScrollView>
 </LinearLayout>
 
